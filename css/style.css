@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro {
   display: table;
   width: 100%;
-  height: 100vh;
+  height: 15vh;
   background: #000;
 }
 
@@ -1294,6 +1294,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .form button[type="submit"]:hover {
   background: #13a456;
 }
+
+#contact .contact-info .contact-address .social-links a {
+  font-size: 10px;
+  display: inline-block;
+  background: #333;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  transition: 0.3s;
+}
+
+#contact .contact-info .contact-address .social-links a:hover {
+  background: #18d26e;
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Footer

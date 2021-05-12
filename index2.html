@@ -27,6 +27,15 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <!-- Contact Form JavaScript File -->
+  <!--<script src="contactform/contactform.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">  </script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript">  </script>
+  <script src="contactform/emailjsform.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript" src="js/formemailjs.js"></script>
+
   <!-- =======================================================
     Theme Name: BizPage
     Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
@@ -51,17 +60,69 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#team">About</a></li>
-          <li><a href="#skills">Skills</a></li>
+		  <li><a href="#services">Services</a></li>
+        <!--  <li><a href="#skills">Skills</a></li>  -->
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
-          
+          <li><a href="index.html">Spanish</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
+  
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro"></section>
+  
+  <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts"  class="wow fadeIn">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Welcome to my web portfolio</h3>
+          <p>I am a web programmer with knowledge in Front-End and Back-End technologies ...</p>
+		  <div class="text-center"> <a href="#team" class="btn btn-outline-success ">Read more</a></div>
+   
+        </header>
+
+       <!-- <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">274</span>
+            <p>Clients</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">421</span>
+            <p>Projects</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,364</span>
+            <p>Hours Of Support</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">18</span>
+            <p>Hard Workers</p>
+  				</div>
+
+  			</div>-->
+
+        <div class="facts-img">
+          <img src="img/facts-img.png" alt="" class="img-fluid">
+        </div>
+
+      </div>
+    </section><!-- #facts -->
+	
+	<!-- #intro --> 
 
   <!--==========Intro Section===============
-  ============================-->
+  ============================
   <section id="intro">
     <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
@@ -86,7 +147,7 @@
           <div class="carousel-item" style="background-image: url('img/intro/2.jpg');">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>  <a href="#skills"> Skilss </a> </h2>
+                <h2>  <a href="#skills"> SKILLS </a> </h2>
                 <p>HTML5, CSS3, Javascript, Bootstrap... </p>
                
               </div>
@@ -96,7 +157,7 @@
           <div class="carousel-item" style="background-image: url('img/intro/3.jpg');">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>  <a href="#portfolio"> Portfolio </a> </h2>
+                <h2>  <a href="#portfolio"> PORTFOLIO </a> </h2>
                 <p>
 					Web pages, web sistems, schemes...
 				</p>
@@ -129,9 +190,9 @@
     <section id="team">
       <div class="container">
         <div class="section-header wow fadeInUp">
-		 <h3>JORGE GUZMÁN JUÁREZ</h3>    
-         <p>   Programador web <br>
-		      Ingeniero en Tecnologías de la Información y Comunicaciones
+		 <h3>JORGE GUZMÁN JUÁREZ | Web Programmer</h3>    
+         <p> 
+		      Comunications and Information Tecnologies Engineer
 		  </p>
 		  
         </div>
@@ -140,16 +201,16 @@
 
           <div class="col-lg-3 col-md-6 wow fadeInUp">
             <div class="member">
-              <img src="img/team/team-3.jpg" class="img-fluid" alt="">
+              <img src="img/team/team-2.png" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-				<h4>Jorge Guzmán Juárez</h4>
+				        <h4>Jorge Guzmán Juárez</h4>
                  <span>Web Programmer </span>
-				  <span>IT Engineer</span>
+				         <span>IT Engineer</span>
                   <div class="social">
-                    <a href="https://www.facebook.com/jorge.guzmanjuarez"><i class="fa fa-facebook"></i></a>                   
+                  <!--  <a href="https://www.facebook.com/jorge.guzmanjuarez"><i class="fa fa-facebook"></i></a> -->                  
                     <a href="https://www.linkedin.com/in/jorge-guzm%C3%A1n-ju%C3%A1rez/"><i class="fa fa-linkedin"></i></a>
-					<a href="https://github.com/JGJCodes"><i class="fa fa-google-plus"></i></a>
+					          <a href="https://github.com/JGJCodes"><i class="fa fa-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -162,14 +223,14 @@
        I am a responsible professional, ordained, hardworking, self-taught, punctual,
        honest, focused on giving results and able to work as a team. <br>
       An experienced engineer in HTML5, CSS3, JavaScript, JSON, AJAX, Bootstrap, PHP, PDO, POO,
-       MVC, Github, Mysql and MS SQL Server. <br>
+       MVC, C#, Visual Studio, Github, Mysql and MS SQL Server. <br>
        Continuously learning and acquiring new skills based on current and future technological
         trends in the field of web development in general.
       
 			<img src="img/quote-sign/quote-sign-right.png" class="quote-sign-right" alt="">
 			</p>
 			<div class="text-center">
-			<a href="https://1drv.ms/b/s!Ah5zQV-lSTFHgq8nyo5Lm-4U63JHWw?e=cCvHHN" class="btn btn-success">Descargar CV</a></div>
+			<a href="pdf/JorgeGuzman-CVProgWeb2021.pdf" class="btn btn-success" download="JorgeGuzman-CV2021.pdf">Download CV</a></div>
           </div>
 
 
@@ -178,18 +239,74 @@
       </div>
     </section>
     <!-- #about -->
+	
+	<!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Services</h3>
+          <p>I am a professionist with the skills, knowledge and competences necessary to offer
+			the following services:</p>
+        </header>
+
+        <div class="row">
+		
+		<div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+            <h4 class="title"><a href="#">Web Programming</a></h4>
+            <p class="description">Construction of simple static web pages with HTML, CSS and JS.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="#">Web Developer</a></h4>
+            <p class="description">Development of responsive web computer systems. </p>
+          </div>
+		  
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="#">Web design</a></h4>
+            <p class="description">Construction of plans, diagrams and prototypes of websites. </p>
+          </div>
+		  
+	<!--	  <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+		  
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-people-outline"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>  -->
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
 
     <!--==========================
       Skills Section
-    ============================-->
+    ============================
     <section id="skills">
       <div class="container">
 
         <header class="section-header">
           <h3>SKILLS</h3>
           <P>Front-End(HTML/CSS/JS/Bootstrap) <br>
-		  Back-End (PHP/PDO/POO/MVC/JSON/AJAX)<br>
-		  Data Base (sql/Mysql/phpmyadmin/MS SQL Server)</P>
+		        Back-End (PHP/PDO/POO/MVC/JSON/AJAX)<br>
+            Frameworks (Laravel)<br> 
+		        Data Base (sql/Mysql/phpmyadmin/MS SQL Server)</P>
         </header>
 
         <div class="skills-content">
@@ -206,6 +323,12 @@
             </div>
           </div>
 
+         <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Frameworks <i class="val">10%</i></span>
+            </div>
+          </div> 
+
           <div class="progress">
             <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
               <span class="skill">Data Base <i class="val">40%</i></span>
@@ -219,7 +342,7 @@
 	
 	 <!--==========================
       Clients Section
-    ============================-->
+    ============================
     <section id="clients" class="wow fadeInUp">
       <div class="container">
 
@@ -228,16 +351,17 @@
         </header>
 
         <div class="owl-carousel clients-carousel">
-          <img class="text-center" src="img/tecnologies/tec-0.png" alt=""> 
-          <img class="text-center" src="img/tecnologies/tec-1.png" alt=""> 
-          <img class="text-center" src="img/tecnologies/tec-2.png" alt=""> 
-          <img class="text-center" src="img/tecnologies/tec-3.jpg" alt=""> 
-          <img class="text-center" src="img/tecnologies/tec-4.png" alt=""> 
-          <img class="text-center" src="img/tecnologies/tec-5.png" alt=""> 
-          <img class="text-center" src="img/tecnologies/tec-6.png" alt=""> 
-          <img class="text-center" src="img/tecnologies/tec-7.png" alt=""> 
-		  <img class="text-center" src="img/tecnologies/tec-8.jpg" alt=""> 
-		  <img class="text-center" src="img/tecnologies/tec-10.png" alt=""> 		 
+          <img class="text-center" src="img/tecnologies/tec-00.png" alt=""> 
+          <img class="text-center" src="img/tecnologies/tec-01.png" alt=""> 
+          <img class="text-center" src="img/tecnologies/tec-02.png" alt=""> 
+          <img class="text-center" src="img/tecnologies/tec-03.png" alt=""> 
+          <img class="text-center" src="img/tecnologies/tec-04.png" alt=""> 
+          <img class="text-center" src="img/tecnologies/tec-05.png" alt=""> 
+          <img class="text-center" src="img/tecnologies/tec-06.png" alt=""> 
+          <img class="text-center" src="img/tecnologies/tec-07.png" alt=""> 
+		      <img class="text-center" src="img/tecnologies/tec-08.png" alt=""> 
+		      <img class="text-center" src="img/tecnologies/tec-09.png" alt="">
+          <img class="text-center" src="img/tecnologies/tec-010.png" alt=""> 		 
         </div>
 
       </div>
@@ -257,11 +381,9 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-webs">Web Pages</li>
-              <li data-filter=".filter-web">Web Sistems</li>
-              <li data-filter=".filter-dia">Schemes</li>
-              <li data-filter=".filter-card">Examples</li>
-              
+              <li data-filter=".filter-webs">HTML</li>
+              <li data-filter=".filter-web">PHP</li>
+              <li data-filter=".filter-cnet">C#</li>
             </ul>
           </div>
         </div>
@@ -272,13 +394,13 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Portafolio Web" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web Portfolio" title="Preview"><i class="ion ion-eye"></i></a>
                 <a href="https://github.com/JGJCodes/Html-PortafolioLaboral" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="https://github.com/JGJCodes/Html-PortafolioLaboral">Portafolio Web</a></h4>
-                <p>Pagina web de presentación de proyectos.</p>
+                <h4><a href="https://github.com/JGJCodes/Html-PortafolioLaboral">Web Portfolio</a></h4>
+                <p>Project presentation website.</p>
               </div>
             </div>
           </div>
@@ -287,13 +409,13 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/portfolio/web3.png" class="img-fluid" alt="">
-                <a href="img/portfolio/web3.png" class="link-preview" data-lightbox="portfolio" data-title="Sistema Web Curso" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="img/portfolio/web3.png" class="link-preview" data-lightbox="portfolio" data-title="Website sales" title="Preview"><i class="ion ion-eye"></i></a>
                 <a href="https://github.com/JGJCodes/Php-SistemaWebCurso" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="https://github.com/JGJCodes/Php-SistemaWebCurso">Sistema Web Curso</a></h4>
-                <p>Se trata de una Proyecto final del curso de Desarrollo Completo.</p>
+                <h4><a href="https://github.com/JGJCodes/Php-SistemaWebCurso">Website sales</a></h4>
+                <p>It is a final project of the Complete Development Course.</p>
               </div>
             </div>
           </div>
@@ -302,13 +424,13 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/portfolio/web2.png" class="img-fluid" alt="">
-                <a href="img/portfolio/web2.png" class="link-preview" data-lightbox="portfolio" data-title="Sistema Web Escolar" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="img/portfolio/web2.png" class="link-preview" data-lightbox="portfolio" data-title="Website School" title="Preview"><i class="ion ion-eye"></i></a>
                 <a href="https://github.com/JGJCodes/Php-SistemaEscolar-Residencias" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="https://github.com/JGJCodes/Php-SistemaEscolar-Residencias">Sistema Web Escolar</a></h4>
-                <p>Se trata de un sistema web educativo.</p>
+                <h4><a href="https://github.com/JGJCodes/Php-SistemaEscolar-Residencias">Website School</a></h4>
+                <p>It is an educational web system.</p>
               </div>
             </div>
           </div>
@@ -317,256 +439,76 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/portfolio/web4.png" class="img-fluid" alt="">
-                <a href="img/portfolio/web4.png" class="link-preview" data-lightbox="portfolio" data-title="Pagina Web Noticias" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="img/portfolio/web4.png" class="link-preview" data-lightbox="portfolio" data-title="Web News" title="Preview"><i class="ion ion-eye"></i></a>
                 <a href="https://github.com/JGJCodes/Html-PaginaWebNoticias" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="https://github.com/JGJCodes/Html-PaginaWebNoticias">Pagina Web Noticias</a></h4>
-                <p>Se trata de un ejemplo de una pagina web de noticias.</p>
+                <h4><a href="https://github.com/JGJCodes/Html-PaginaWebNoticias">Web News</a></h4>
+                <p>It is an example of a news web page.</p>
               </div>
             </div>
           </div>
 
-		<div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-webs wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/ejer-html.png" class="img-fluid" alt="">
-                <a href="img/portfolio/ejer-html.png" data-lightbox="portfolio" data-title="Ejercicios HTML" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="https://github.com/JGJCodes/Html-Examples" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <img src="img/portfolio/web5.png" class="img-fluid" alt="">
+                <a href="img/portfolio/web5.png" class="link-preview" data-lightbox="portfolio" data-title="Example Blog" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="https://github.com/JGJCodes/bootstrap-Blog" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="https://github.com/JGJCodes/Html-Examples">Ejercicios HTML</a></h4>
-                <p>Ejemplos de programación construidos con HTML</p>
+                <h4><a href="https://jgjcodes.github.io/bootstrap-Blog/">Example Blog</a></h4>
+                <p>It is a web template of a blog built with bootstrap.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-webs wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web6.png" class="img-fluid" alt="">
+                <a href="img/portfolio/web6.png" class="link-preview" data-lightbox="portfolio" data-title="Example Webpage" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="https://github.com/JGJCodes/bootstrap-sitioweb" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="https://jgjcodes.github.io/bootstrap-sitioweb/">Example Webpage</a></h4>
+                <p>It is a web template of a website built with bootstrap.</p>
               </div>
             </div>
           </div>
 		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-cnet wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/ejer-css.png" class="img-fluid" alt="">
-                <a href="img/portfolio/ejer-css.png" data-lightbox="portfolio" data-title="Ejercicios CSS" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="https://github.com/JGJCodes/Css-Examples" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <img src="img/portfolio/cnet1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/cnet1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Sistema Control Asistencia" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="https://github.com/JGJCodes/CSharp-Sistema-Asistencia-Residencias" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="https://github.com/JGJCodes/Css-Examples">Ejercicios CSS</a></h4>
-                <p>Ejemplos de programación construidos con CSS</p>
+                <h4><a href="https://github.com/JGJCodes/CSharp-Sistema-Asistencia-Residencias">System control assistance.</a></h4>
+                <p>It is a computer system built with .NET technologies.</p>
               </div>
             </div>
           </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.2s">
+		
+		<!--  <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/ejer-bootstrap.png" class="img-fluid" alt="">
-                <a href="img/portfolio/ejer-bootstrap.png" class="link-preview" data-lightbox="portfolio" data-title="Ejercicios Bootstrap" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="https://github.com/JGJCodes/Boobstrap-Examples" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <img src="img/portfolio/web3.png" class="img-fluid" alt="">
+                <a href="img/portfolio/web3.png" class="link-preview" data-lightbox="portfolio" data-title="Point of sale website" title="Visualizar"><i class="ion ion-eye"></i></a>
+                <a href="https://github.com/JGJCodes/Laravel-Cursopuntodeventa" class="link-details" title="Más Detalles"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="https://github.com/JGJCodes/Boobstrap-Examples">Ejercicios Bootstrap</a></h4>
-                <p>Ejemplos de programación construidos con bootstrap.</p>
+                <h4><a href="https://github.com/JGJCodes/Laravel-Cursopuntodeventa">Point of sale website</a></h4>
+                <p>It is the final project of the Web Development Course with Laravel.</p>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/ejer-php.png" class="img-fluid" alt="">
-                <a href="img/portfolio/ejer-php.png" class="link-preview" data-lightbox="portfolio" data-title="Ejercicios PHP" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="https://github.com/JGJCodes/Php-Examples" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="https://github.com/JGJCodes/Php-Examples">Ejercicios PHP</a></h4>
-                <p>Ejemplos de programación construidos con PHP.</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/ejer-javascript.png" class="img-fluid" alt="">
-                <a href="img/portfolio/ejer-javascript.png" class="link-preview" data-lightbox="portfolio" data-title="Ejercicios Javascript" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="https://github.com/JGJCodes/Javascript-Examples" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="https://github.com/JGJCodes/Javascript-Examples">Ejercicios Javascript</a></h4>
-                <p>Ejemplos de programación construidos con Javascript.</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/ejer-arduino.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/ejer-arduino.jpg" class="link-preview" data-lightbox="portfolio" data-title="Ejercicios Arduino" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="https://github.com/JGJCodes/Arduino-Examples" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="https://github.com/JGJCodes/Arduino-Examples">Ejercicios Arduino</a></h4>
-                <p>Ejemplos de programación construidos con Arduino.</p>
-              </div>
-            </div>
-          </div>
-		  
-		   <div class="col-lg-4 col-md-6 portfolio-item filter-dia wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/dia1.png" class="img-fluid" alt="">
-                <a href="img/portfolio/dia1.png" class="link-preview" data-lightbox="portfolio" data-title="Diagrama DB" title="Preview"><i class="ion ion-eye"></i></a>
-                
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="img/portfolio/dia1.png" class="link-preview" data-lightbox="portfolio" data-title="Diagrama DB" title="Preview">Diagrama DB</a></h4>
-                <p>Ejemplos de un diagrama de una base de datos de un ejercicio.</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-dia wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/dia2.png" class="img-fluid" alt="">
-                <a href="img/portfolio/dia2.png" class="link-preview" data-lightbox="portfolio" data-title="Diagrama DB" title="Preview"><i class="ion ion-eye"></i></a>
-               
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="img/portfolio/dia2.png" class="link-preview" data-lightbox="portfolio" data-title="Diagrama DB" title="Preview">Diagrama DB</a></h4>
-                <p>Ejemplos de un diagrama de una base de datos de un ejercicio.</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-dia wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/dia3.png" class="img-fluid" alt="">
-                <a href="img/portfolio/dia3.png" class="link-preview" data-lightbox="portfolio" data-title="Diagrama DB" title="Preview"><i class="ion ion-eye"></i></a>
-               
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="img/portfolio/dia3.png" class="link-preview" data-lightbox="portfolio" data-title="Diagrama DB" title="Preview">Diagrama DB</a></h4>
-                <p>Ejemplos de un diagrama de una base de datos de un ejercicio.</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-dia wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/dia4.png" class="img-fluid" alt="">
-                <a href="img/portfolio/dia4.png" class="link-preview" data-lightbox="portfolio" data-title="Diagrama DB" title="Preview"><i class="ion ion-eye"></i></a>
-               
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="img/portfolio/dia4.png" class="link-preview" data-lightbox="portfolio" data-title="Diagrama DB" title="Preview">Diagrama DB</a></h4>
-                <p>Ejemplos de un diagrama de una base de datos de un ejercicio.</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-dia wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/dia5.png" class="img-fluid" alt="">
-                <a href="img/portfolio/dia5.png" class="link-preview" data-lightbox="portfolio" data-title="Diagrama caso de uso" title="Preview"><i class="ion ion-eye"></i></a>
-               
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="img/portfolio/dia5.png" class="link-preview" data-lightbox="portfolio" data-title="Diagrama caso de uso" title="Preview">Diagrama caso de uso</a></h4>
-                <p>Ejemplos de un diagrama uml de casos de uso de un ejercicio.</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-dia wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/dia6.jpeg" class="img-fluid" alt="">
-                <a href="img/portfolio/dia6.jpeg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-               
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="img/portfolio/dia6.jpeg" class="link-preview" data-lightbox="portfolio" data-title="Diagrama electrónico" title="Preview">Diagrama electrónico</a></h4>
-                <p>Ejemplos de un diagrama de un circuito electrónico</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-dia wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/dia7.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/dia7.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-               
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="img/portfolio/dia7.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview">Diagrama DB</a></h4>
-                <p>Ejemplos de un diagrama de un circuito electrónico.</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-dia wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/dia8.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/dia8.jpg" class="link-preview" data-lightbox="portfolio" data-title="Diagrama electrónico" title="Preview"><i class="ion ion-eye"></i></a>
-               
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="img/portfolio/dia8.jpg" class="link-preview" data-lightbox="portfolio" data-title="Diagrama electrónico" title="Preview">Diagrama electrónico</a></h4>
-                <p>Ejemplos de un diagrama de un circuito electrónico.</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-dia wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/dia9.png" class="img-fluid" alt="">
-                <a href="img/portfolio/dia9.png" class="link-preview" data-lightbox="portfolio" data-title="Mapa de sitio we" title="Preview"><i class="ion ion-eye"></i></a>
-               
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="img/portfolio/dia9.png" class="link-preview" data-lightbox="portfolio" data-title="Mapa de sitio we" title="Preview">Mapa de sitio web</a></h4>
-                <p>Ejemplos de un mapa de sitio web.</p>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 portfolio-item filter-dia wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/dia10.png" class="img-fluid" alt="">
-                <a href="img/portfolio/dia10.png" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-               
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="img/portfolio/dia10.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview">Diagrama de flujo</a></h4>
-                <p>Ejemplos de un diagrama de flujo de un ejercicio de programación.</p>
-              </div>
-            </div>
-          </div>
+		</div>  -->
 		
 
         </div>
@@ -592,15 +534,21 @@
           <div class="col-md-4">
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
-              <h3>Location</h3>
-              <address>Tampico, Tamaulipas, Mexico</address>
-            </div>
+              <h3>Social media</h3>
+           <!--   <address>Tampico, Tamaulipas, México</address> -->
+				<div class="social-links"> 
+					<a href="https://www.linkedin.com/in/jorge-guzm%C3%A1n-ju%C3%A1rez/" >
+					<i class="fa fa-linkedin fa-lg"></i></a>
+					<a href="https://github.com/JGJCodes" ><i class="fa fa-github fa-lg"></i></a>
+				</div>
+				</div>
           </div>
 
           <div class="col-md-4">
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone</h3>
+              <p><a href="tel:+528335752227">+52 833 575 2227</a></p>
               <p><a href="tel:+528332807033">+52 833 280 7033</a></p>
             </div>
           </div>
@@ -620,19 +568,19 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thanks!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form action="" method="" id="contact-form" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" required id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 characters" />
+                <input type="text" name="from_name" class="form-control" required placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 characters" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" required placeholder="ejemplo@email.com" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="from_email"  required placeholder="ejemplo@email.com" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" required placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 subject characters" />
+              <input type="text" class="form-control" name="from_subject"  required placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 4 subject characters" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
@@ -641,7 +589,7 @@
             </div>
             <div class="text-center"><button type="submit">Submit</button></div>
           </form>
-        </div>
+        </div>  
 
       </div>
     </section><!-- #contact -->
@@ -671,25 +619,28 @@
             <ul>
               <li><i class="ion-ios-arrow-right"></i> <a href="index.html">ES|Programador web</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="index2.html">EN|Programador web</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="index3.html">ES|Programador .net</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="index4.html">EN|Programador .net</a></li>
+           <!--   <li><i class="ion-ios-arrow-right"></i> <a href="index3.html">ES|Programador .net</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index4.html">EN|Programador .net</a></li> -->
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact</h4>
-              <strong>Phone:</strong> +52 833 280 7033<br>
+              <strong>Phone:</strong> 
+              <br>+52 833 280 7033<br>
+              +52 833 280 7033<br>
 			  <strong>Email:</strong> 
 			  jorge.guzman.juarez@outlook.com<br>
               jorge.jgj.94@gmail.com<br>
             </p>
 
             <div class="social-links">
-              <a href="https://www.facebook.com/jorge.guzmanjuarez" class="facebook">
-			  <i class="fa fa-facebook"></i></a>
+			<strong>Social media:</strong> 
+             <!-- <a href="https://www.facebook.com/jorge.guzmanjuarez" class="facebook">
+			  <i class="fa fa-facebook"></i></a> -->
               <a href="https://www.linkedin.com/in/jorge-guzm%C3%A1n-ju%C3%A1rez/" class="linkedin">
 			  <i class="fa fa-linkedin"></i></a>
-			  <a href="https://github.com/JGJCodes" class="google-plus"><i class="fa fa-google-plus"></i></a>
+			  <a href="https://github.com/JGJCodes" class="github"><i class="fa fa-github"></i></a>
             </div>
 
           </div>
@@ -730,15 +681,6 @@
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-  
-  
-  <!-- Contact Form JavaScript File -->
-  <!--<script src="contactform/contactform.js"></script>-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">  </script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript">  </script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script src="contactform/emailjsform.js"></script>
-
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
