@@ -27,6 +27,15 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <!-- Contact Form JavaScript File -->
+  <!--<script src="contactform/contactform.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">  </script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript">  </script>
+  <script src="contactform/emailjsform.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript" src="js/formemailjs.js"></script>
+
   <!-- =======================================================
     Theme Name: BizPage
     Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
@@ -220,7 +229,7 @@
 			<img src="img/quote-sign/quote-sign-right.png" class="quote-sign-right" alt="">
 			</p>
 			<div class="text-center">
-			<a href="https://1drv.ms/b/s!Ah5zQV-lSTFHgq8nyo5Lm-4U63JHWw?e=NRSG3u" class="btn btn-success">Descargar CV</a></div>
+			<a href="pdf/JorgeGuzman-CVProgWeb2021.pdf" class="btn btn-success" download="JorgeGuzman-CV2021.pdf">Descargar CV</a></div>
           </div>
         </div>
 
@@ -573,37 +582,36 @@
               <i class="ion-ios-email-outline"></i>
               <h3>Correo electrónico</h3>
               <p><a href="mailto:jorge.guzman.juarez@outlook.com">jorge.guzman.juarez@outlook.com</a></p>
-			  <p><a href="mailto:jorge.jgj.94@gmail.com">jorge.jgj.94@gmail.com</a></p>
-			  
+			        <p><a href="mailto:jorge.jgj.94@gmail.com">jorge.jgj.94@gmail.com</a></p>
             </div>
           </div>
 
         </div>
 
-      <!--  <div class="form">
+    <div class="form">
           <div id="sendmessage">Su mensaje ha sido enviado. ¡Gracias!</div>
           <div id="errormessage"></div>
-          <form action="" method="" id="app" role="form" class="contactForm">
+          <form action="" method="" id="contact-form" role="form" class="contactForm">
             
-			<div class="form-row">
+			    <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="from_name" class="form-control" required v-model="from_name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" />
+                <input type="text" name="from_name" class="form-control" required placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="from_email" v-model="from_email" required placeholder="ejemplo@email.com" data-rule="email" data-msg="Por favor, introduzca un correo electrónico válido" />
+                <input type="email" class="form-control" name="from_email"  required placeholder="ejemplo@email.com" data-rule="email" data-msg="Por favor, introduzca un correo electrónico válido" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" v-model="subject" required placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor, introduzca al menos 8 caracteres de sujeto" />
+              <input type="text" class="form-control" name="from_subject"  required placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor, introduzca al menos 4 caracteres de asunto" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" v-model="message" rows="5" data-rule="required" data-msg="Por favor escribe un mensaje" placeholder="Mensaje"></textarea>
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escribe un mensaje" placeholder="Mensaje"></textarea>
               <div class="validation"></div>
             </div>
-            <div class="text-center"><button class="btn btn-success" @click="enviar">Enviar mensaje</button></div>
+            <div class="text-center"><button class="btn btn-success" type="submit">Enviar mensaje</button></div>
           </form>
         </div> -->
 
@@ -697,14 +705,6 @@
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-  
-  
-  <!-- Contact Form JavaScript File -->
-  <!--<script src="contactform/contactform.js"></script>-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">  </script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript">  </script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script src="contactform/emailjsform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
